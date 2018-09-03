@@ -1,0 +1,49 @@
+.reseller {
+    .card-img-top {
+    border: 1px solid #ddd; 
+    padding: 5px; 
+    width: 500px; 
+    margin-left:160px;
+}
+}
+.resellers{
+    margin-bottom: 30px;
+    a{
+        color: black;
+     }
+}
+ 
+.logo{
+    margin-bottom:100px;
+    a{
+        color: black;
+        font-family: 'Abril Fatface', cursive;
+        font-weight: bold;
+        font-size: 30px;
+        float: left;
+        margin-top: 20px;
+        
+
+    }
+
+    /* visited link */
+    a:visited {
+        color:#000;
+    }
+    
+    /* mouse over link */
+    a:hover {
+        color: darkgray;
+    }
+    
+    /* selected link */
+    a:active {
+        color: #000;
+    }
+    
+}
+
+.map{
+    background-color: #000;
+    margin-bottom: 25px;
+}

@@ -1,0 +1,140 @@
+.sidebar {
+  border: 1px solid #ddd;
+  background-color: #000;
+  margin: 15px;
+  width: 250px; }
+  .sidebar h3 {
+    color: white;
+    text-decoration: underline; }
+
+ul {
+  color: black; }
+
+li {
+  text-decoration: none; }
+
+li a {
+  padding: 6px 8px 6px 16px;
+  font-size: 25px;
+  color: #818181;
+  display: block; }
+
+li a:hover {
+  color: #f1f1f1; }
+
+footer {
+  background-color: #000;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 100px; }
+
+#social_media_links {
+  font-size: 50px;
+  text-align: center;
+  color: #DCDCDC; }
+
+h1 {
+  font-size: 32px; }
+
+a {
+  color: black; }
+
+p {
+  font-size: 20px;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif; }
+
+h1, h2, h3 {
+  color: #000; }
+
+.inspiration {
+  display: block; }
+  .inspiration a {
+    color: black; }
+  .inspiration p {
+    font-size: 20px;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif; }
+  .inspiration img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 100%;
+    height: 350px; }
+
+.mySlides {
+  display: none; }
+
+.slideshow img {
+  width: 100%;
+  height: auto; }
+
+.about {
+  background-color: #DCDCDC;
+  /* visited link */
+  /* mouse over link */
+  /* selected link */ }
+  .about a:link {
+    color: #000; }
+  .about a:visited {
+    color: #000; }
+  .about a:hover {
+    color: darkgray; }
+  .about a:active {
+    color: #000; }
+
+.tips {
+  background-color: #DCDCDC; }
+
+.tips-archive {
+  margin-bottom: 50px; }
+
+.reseller .card-img-top {
+  border: 1px solid #ddd;
+  padding: 5px;
+  width: 500px;
+  margin-left: 160px; }
+
+.resellers {
+  margin-bottom: 30px; }
+  .resellers a {
+    color: black; }
+
+.logo {
+  margin-bottom: 100px;
+  /* visited link */
+  /* mouse over link */
+  /* selected link */ }
+  .logo a {
+    color: black;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    float: left;
+    margin-top: 20px; }
+  .logo a:visited {
+    color: #000; }
+  .logo a:hover {
+    color: darkgray; }
+  .logo a:active {
+    color: #000; }
+
+.map {
+  background-color: #000;
+  margin-bottom: 25px; }
+
+.contact {
+  margin: 100px;
+  padding: 80px;
+  margin-bottom: 300px;
+  background-color: black; }
+
+.us {
+  background-color: aqua; }
+
+.blog a {
+  color: black; }
+
+/*# sourceMappingURL=main.css.map */

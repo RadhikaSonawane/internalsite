@@ -1,0 +1,21 @@
+{
+  "name": "wp-starter",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.com/pixelant/wp-starter.svg?token=wzqK7t2fnYqKnxYxwzyk&branch=master)](https://travis-ci.com/pixelant/wp-starter)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.0.1",
+    "node-sass": "^4.9.3"
+  },
+  "dependencies": {
+    "grunt-contrib-cssmin": "^2.2.1"
+  }
+}

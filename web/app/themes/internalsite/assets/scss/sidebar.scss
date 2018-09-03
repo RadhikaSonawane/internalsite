@@ -1,0 +1,29 @@
+.sidebar{
+    border: 1px solid #ddd;
+    background-color: #000;
+    margin:15px;
+    width:250px;
+
+h3{
+    color:white;
+    text-decoration: underline;
+}
+    }
+
+ul{
+    color:black;
+}
+li {
+    text-decoration: none;
+   }
+
+li a{
+    padding: 6px 8px 6px 16px;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+li a:hover {
+    color: #f1f1f1;
+}
