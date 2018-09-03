@@ -1,0 +1,78 @@
+{
+  "name": "resultify/wp-starter",
+  "type": "project",
+  "license": "MIT",
+  "description": "WP Starter",
+  "authors": [
+    {
+      "name": "Thor Brink",
+      "email": "thor.brink@resultify.se"
+    }
+  ],
+  "config": {
+    "preferred-install": "dist"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:pixelant/advanced-custom-fields-pro.git"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:pixelant/advanced-custom-fields-pro.git"
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "composer/installers": "^1.4",
+    "vlucas/phpdotenv": "^2.0.1",
+    "johnpbloch/wordpress": ">=4.9.0",
+    "oscarotero/env": "^1.1.0",
+    "wpackagist-plugin/wordpress-seo": ">=5.8",
+    "wpackagist-theme/twentyseventeen": ">=1.4",
+    "resultify/advanced-custom-fields-pro": "^5.6",
+    "wpackagist-plugin/custom-post-type-ui": "^1.5",
+    "wpackagist-plugin/envira-gallery-lite": "1.6.1.5",
+    "wpackagist-plugin/awesome-responsive-photo-gallery": "1.0.5",
+    "wpackagist-plugin/ninja-forms": "3.3.13",
+    "wpackagist-plugin/contact-form-7-to-post": "1.0.0"
+  },
+  "require-dev": {
+    "wp-coding-standards/wpcs": "^0.14.0"
+  },
+  "extra": {
+    "installer-paths": {
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "web/wp"
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "php -r \"copy('.env.example', '.env');\""
+    ],
+    "test-wp-standards": [
+      "vendor/bin/phpcs"
+    ],
+    "fix-wp-standards": [
+      "vendor/bin/phpcbf"
+    ],
+    "fetch-db-from-prod": [
+      "sh ./composer_scripts/fetch-db-from-prod.sh"
+    ],
+    "fetch-assets-from-prod": [
+      "sh ./composer_scripts/fetch-assets-from-prod.sh"
+    ],
+    "add-local-user": [
+      "sh ./composer_scripts/add-local-user.sh"
+    ],
+    "check-vulnerabilities": [
+      "sh ./composer_scripts/check-vulnerabilities.sh"
+    ]
+  }
+}

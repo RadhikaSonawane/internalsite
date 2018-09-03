@@ -1,0 +1,38 @@
+version: "3.1"
+
+services:
+
+  wp_starter_db:
+    container_name: wp_starter_db
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=wp
+      - MYSQL_USER=wp
+      - MYSQL_PASSWORD=root
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./docker_conf/mysqlconf:/etc/mysql/mysql.conf.d
+
+  wp_starter_web:
+    container_name: wp_starter_web
+    image: t3kit/ubuntu16-php7-apache:0.1.2
+    ports:
+      - 8888:80
+    depends_on:
+      - wp_starter_db
+      - wp-starter-mailhog
+    volumes:
+      - .:/var/www/html:cached
+      - ./docker_conf:/docker_conf:cached
+    environment:
+      USERID: 1001
+      GROUPID: 1001
+    command: "sh /docker_conf/run.sh"
+
+  wp-starter-mailhog:
+    container_name: wp-starter-mailhog
+    image: mailhog/mailhog
+    ports:
+      - "8025:8025"
