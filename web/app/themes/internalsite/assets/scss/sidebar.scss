@@ -1,6 +1,8 @@
 .sidebar{
     border: 1px solid #ddd;
-    background-color: #000;
+    background-color: #f5f2ed;
+    margin-bottom: 2rem;
+    padding: 1rem;
     margin:15px;
     width:250px;
 
@@ -13,17 +15,31 @@ h3{
 ul{
     color:black;
 }
+
 li {
-    text-decoration: none;
+   list-style: none;
    }
 
 li a{
+    font-family: 'IntroRust-Base';
     padding: 6px 8px 6px 16px;
     font-size: 25px;
     color: #818181;
     display: block;
+    text-decoration: none;
+    
 }
 
 li a:hover {
     color: #f1f1f1;
+}
+
+.widget-content{
+    background-color: #f5f2ed;
+    border: 1px solid #ddd;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-family: 'IntroRust-Base';
+
 }

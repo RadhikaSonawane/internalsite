@@ -11,7 +11,7 @@
         $post_url = $data->guid;
     }
     ?>
-    <h1 class="my-4 text-center"><a href="<?php echo get_tag_link(3); ?>">Tips</a><h1>
+    <h1 class="my-4 text-center text"><a href="<?php echo get_tag_link(3); ?>">Tips</a><h1>
 
 
             <?php
@@ -33,9 +33,10 @@
                     <div class="col-sm-4 card text-center">
 
                             <?php the_post_thumbnail('tips-image');?>
-                            <h3 class="homepage-post-title"><a href="<?php the_permalink(); ?>"><?php echo $post->post_title; ?></a></h3>
+                        <div class="ti">
+                            <h3 class="homepage-post-title test"><a href="<?php the_permalink(); ?>"><?php echo $post->post_title; ?></a></h3>
                             <?php the_excerpt(); ?>
-    
+                       </div>
                      </div>
 
                         <?php endwhile; ?>

@@ -1,39 +1,28 @@
+<?php get_header(); ?>
 <?php
-get_header();
+$s=get_search_query();
+$args = array(
+                's' =>$s
+            );
+    // The Query
+$the_query = new WP_Query( $args );
+if ( $the_query->have_posts() ) {
+        _e("<h2 style='font-weight:bold;color:#000'>Search Results for: ".get_query_var('s')."</h2>");
+        while ( $the_query->have_posts() ) {
+           $the_query->the_post();
+                 ?>
+                    <li>
+                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    </li>
+                 <?php
+        }
+    }else{
 ?>
+        <h2 style='font-weight:bold;color:#000'>Nothing Found</h2>
+        <div class="alert alert-info">
+          <p>Sorry, but nothing matched your search criteria. Please try again with some different keywords.</p>
+        </div>
+<?php } ?>
 
-<div class="container">
-<div class="row">
-    <div class="col-md-9">
-
-<?php if (have_posts()){ ?>
-    <h2> Search Results for: <?php the_search_query(); ?></h2>
-<?php while (have_posts()) { the_post()?>
-
-  <?php get_template_part('partials/content', get_post_format());?>
-
-    <?php } ?>
-
-    <?php }else { ?>
-
-<!-- nu har vi konst -->
-Sorry we have  no article that you are looking for.
- <?php } ?>
-
-
-
-    </div> <!-- end col-md-9 -->
- <div class="col-md-3">
- <?php get_sidebar();?>
- </div>
-
-    </div>  <!-- end row -->
-</div>
-
-
-
-
-
-<?php
-get_footer();
-?>
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>

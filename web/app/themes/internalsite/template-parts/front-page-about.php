@@ -17,12 +17,12 @@
       if ($about->have_posts()) :
   ?>
 
-    <div class="row mb-4">
+    <div class="row ">
     <br/><br/>
         <?php while ($about->have_posts()) : ?>
           <?php $about->the_post(); ?>
 
-          <div class="about">
+          <div class="">
                 <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                 <?php the_content(); ?>
                 <br/><br/>

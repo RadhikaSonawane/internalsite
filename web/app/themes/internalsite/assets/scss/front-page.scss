@@ -1,22 +1,26 @@
 a{
-    color: black;
- }
+    color:rgb(77, 77, 77);
+    font-family: 'IntroRust-Base';
+}
  
 p {
     font-size:20px;
     font-style: normal;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: GothamRounded-Book;
+    color:rgb(77, 77, 77);
 }
 
-h1, h2, h3 {
-    color:#000;
+h1 h2 h3 {
+    color:rgb(77, 77, 77);
+    font-family:'IntroRust-Base';
+
 }
 
 .inspiration {
     display: block;
 
     a{
-        color: black;
+        color:rgb(77, 77, 77);
      }
 
     p {
@@ -33,6 +37,10 @@ h1, h2, h3 {
         width:100%;
         height:350px;
     }
+    .in{
+        background-color:#DCDCDC;
+        margin-bottom: 15px;
+    }
 }
 
 .mySlides {
@@ -40,11 +48,34 @@ h1, h2, h3 {
     }
 
 .slideshow {
-    
-        img {
-            width: 100%;
-            height: auto;
+      img {
+        box-shadow: inset 0 0 0 1000px #0007;
+        width: 100%;
+        height: auto;
         }
+        h3 {
+            color:white;
+        }
+        .caption{
+            text-align: center;
+            position: absolute;
+            top:50%;
+            left:50%;
+            width: 100%;
+            transform: translate(-50%,-50%);
+            color:#fff;
+            z-index: 4;
+        }
+        p{
+            color:white;
+        }
+}
+.carousel-inner{
+    @media (max-width: 767px) 
+ {
+top: 35%;
+width: 90%;
+}
 }
 
 .about{
@@ -71,6 +102,14 @@ h1, h2, h3 {
 
     .tips{
         background-color: #DCDCDC;
+     a{
+         color: rgb(77, 77, 77);
+     }
+
+     .ti{
+        background-color:#DCDCDC;
+        margin-bottom: 15px;
+    }
     }
 
     .tips-archive{

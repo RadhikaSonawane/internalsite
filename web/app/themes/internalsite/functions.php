@@ -81,14 +81,14 @@ function pietergoosen_theme_setup() {
 
   /* change excerpt length to 80 words */
   function modify_read_more_link() {
-    return '<br/><a class="more-link btn btn-outline-warning" href="' . get_permalink() . '">Read More</a>';
+    return '<br/><a class="more-link btn btn-outline-light" href="' . get_permalink() . '">Read More</a>';
 }
 add_filter( 'the_content_more_link', 'modify_read_more_link' );
 
   // Replaces the excerpt "Read More" text by a link
   function new_excerpt_more($more) {
   global $post;
-return '<br/><a class="moretag btn btn-outline-warning" href="'. get_permalink($post->ID) . '"> Read More</a>';
+return '<br/><a class="moretag btn btn-outline-light" href="'. get_permalink($post->ID) . '"> Read More</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
@@ -152,7 +152,7 @@ add_filter('excerpt_more', 'new_excerpt_more');
   }
   add_action('pre_get_posts', 'exclude_category');
   
-/**sidebat-left */
+/**sidebar-left */
   function my_custom_sidebar() {
     register_sidebar(
         array (
@@ -174,3 +174,17 @@ function remove_comment_fields($fields) {
   return $fields;
 }
 add_filter('comment_form_default_fields','remove_comment_fields');
+
+/** Search function */
+function add_last_nav_item($items, $args) {
+  if ($args->menu == 'header_menu') {
+        $homelink = get_search_form();
+        $items = $items;
+        $items .= '<li>'.$homelink.'</li>';
+        return $items;
+  }
+  return $items;
+}
+add_filter( 'wp_nav_menu_items', 'add_last_nav_item', 10, 2 );
+
+

@@ -15,7 +15,7 @@ $fields =  array(
  
 $comments_args = array(
     'fields' =>  $fields,
-    'title_reply'=>'Please give us your valuable comment',
+    'title_reply'=>'Comment',
     'label_submit' => 'Send My Comment',
 );
  

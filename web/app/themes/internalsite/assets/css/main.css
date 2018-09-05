@@ -1,6 +1,8 @@
 .sidebar {
   border: 1px solid #ddd;
-  background-color: #000;
+  background-color: #f5f2ed;
+  margin-bottom: 2rem;
+  padding: 1rem;
   margin: 15px;
   width: 250px; }
   .sidebar h3 {
@@ -11,16 +13,26 @@ ul {
   color: black; }
 
 li {
-  text-decoration: none; }
+  list-style: none; }
 
 li a {
+  font-family: 'IntroRust-Base';
   padding: 6px 8px 6px 16px;
   font-size: 25px;
   color: #818181;
-  display: block; }
+  display: block;
+  text-decoration: none; }
 
 li a:hover {
   color: #f1f1f1; }
+
+.widget-content {
+  background-color: #f5f2ed;
+  border: 1px solid #ddd;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  font-family: 'IntroRust-Base'; }
 
 footer {
   background-color: #000;
@@ -37,21 +49,40 @@ footer {
 h1 {
   font-size: 32px; }
 
+.title {
+  font-family: 'Abril Fatface', cursive; }
+
+.navbar-brand {
+  margin-left: 20px;
+  font-family: 'IntroRust-Base';
+  text-decoration: bold;
+  font-size: 45px;
+  color: #818181; }
+
+.clogo {
+  width: 50px;
+  height: 50px;
+  opacity: 0.7;
+  filter: alpha(opacity=50); }
+
 a {
-  color: black; }
+  color: #4d4d4d;
+  font-family: 'IntroRust-Base'; }
 
 p {
   font-size: 20px;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: GothamRounded-Book;
+  color: #4d4d4d; }
 
-h1, h2, h3 {
-  color: #000; }
+h1 h2 h3 {
+  color: #4d4d4d;
+  font-family: 'IntroRust-Base'; }
 
 .inspiration {
   display: block; }
   .inspiration a {
-    color: black; }
+    color: #4d4d4d; }
   .inspiration p {
     font-size: 20px;
     font-style: normal;
@@ -63,13 +94,35 @@ h1, h2, h3 {
     margin-top: 10px;
     width: 100%;
     height: 350px; }
+  .inspiration .in {
+    background-color: #DCDCDC;
+    margin-bottom: 15px; }
 
 .mySlides {
   display: none; }
 
 .slideshow img {
+  box-shadow: inset 0 0 0 1000px #0007;
   width: 100%;
   height: auto; }
+.slideshow h3 {
+  color: white; }
+.slideshow .caption {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 4; }
+.slideshow p {
+  color: white; }
+
+@media (max-width: 767px) {
+  .carousel-inner {
+    top: 35%;
+    width: 90%; } }
 
 .about {
   background-color: #DCDCDC;
@@ -87,20 +140,32 @@ h1, h2, h3 {
 
 .tips {
   background-color: #DCDCDC; }
+  .tips a {
+    color: #4d4d4d; }
+  .tips .ti {
+    background-color: #DCDCDC;
+    margin-bottom: 15px; }
 
 .tips-archive {
   margin-bottom: 50px; }
 
 .reseller .card-img-top {
   border: 1px solid #ddd;
-  padding: 5px;
-  width: 500px;
-  margin-left: 160px; }
+  padding: 5px; }
 
 .resellers {
-  margin-bottom: 30px; }
+  margin-top: 30px; }
   .resellers a {
     color: black; }
+
+.re-all {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+p {
+  font-size: 20px;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif; }
 
 .logo {
   margin-bottom: 100px;
@@ -108,7 +173,6 @@ h1, h2, h3 {
   /* mouse over link */
   /* selected link */ }
   .logo a {
-    color: black;
     font-family: 'Abril Fatface', cursive;
     font-weight: bold;
     font-size: 30px;
@@ -117,13 +181,47 @@ h1, h2, h3 {
   .logo a:visited {
     color: #000; }
   .logo a:hover {
-    color: darkgray; }
+    color: #4d4d4d; }
   .logo a:active {
     color: #000; }
+  .logo a {
+    color: #4d4d4d;
+    font-family: 'IntroRust-Base'; }
+  .logo p {
+    font-size: 20px;
+    font-style: normal;
+    font-family: GothamRounded-Book;
+    color: #4d4d4d; }
+  .logo h1 h2 h3 {
+    color: #4d4d4d;
+    font-family: 'IntroRust-Base'; }
+  .logo h1 {
+    color: #4d4d4d;
+    font-family: 'IntroRust-Base'; }
 
 .map {
   background-color: #000;
   margin-bottom: 25px; }
+
+#pis_posts_in_sidebar-2 p {
+  font-size: 10px; }
+
+@media screen and (max-width: 600px) {
+  .gallery {
+    width: 100%; } }
+@media screen and (max-width: 992px) {
+  .gallery {
+    width: 100%; } }
+@media screen and (min-width: 480px) {
+  .gallery {
+    min-width: 100%; } }
+.test h1 {
+  color: #4d4d4d;
+  font-family: 'IntroRust-Base'; }
+
+.h-tag {
+  color: #4d4d4d;
+  font-family: 'IntroRust-Base'; }
 
 .contact {
   margin: 100px;
@@ -131,10 +229,33 @@ h1, h2, h3 {
   margin-bottom: 300px;
   background-color: black; }
 
-.us {
-  background-color: aqua; }
-
+@media (min-width: 480px) {
+  .contact {
+    max-width: 100%;
+    height: auto;
+    margin: 100px;
+    padding: 80px;
+    margin-bottom: 300px;
+    background-color: black; } }
+@media (min-width: 700px) {
+  .contact {
+    max-width: 100%;
+    height: auto;
+    margin: 100px;
+    padding: 80px;
+    margin-bottom: 300px;
+    background-color: black; } }
 .blog a {
   color: black; }
+.blog .text {
+  margin: 10px; }
+.blog .thum-img {
+  margin: 10px; }
+.blog .card {
+  background-color: #f5f2ed; }
+
+.blog-con {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 /*# sourceMappingURL=main.css.map */

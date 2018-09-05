@@ -11,12 +11,12 @@ get_header();
 ?>
 
 <div class="container reseller-archive ">
-    <div class="text-center" >
+    <div class="text-center test" >
          <h1><?php single_cat_title(); ?></h1>
     </div>
 
                 
-                <h1 class="text-center">Our products</h1>
+                <h1 class="text-center h-tag">Our products</h1>
 
                         <div class="row resellers"> 
                                 
@@ -31,7 +31,7 @@ get_header();
                                         </div>
 
                                         <div class="card-body">
-                                                <h3 class="card-title"><a href="<?php the_permalink(); ?>"><?php echo $post->post_title; ?></a></h3>
+                                                <h3 class="card-title test"><a href="<?php the_permalink(); ?>"><?php echo $post->post_title; ?></a></h3>
                                                 <?php the_excerpt();?>
                                         </div>
                                                         
@@ -43,19 +43,19 @@ get_header();
                         </div><!-- /.row -->
                          
                         
-                <h1 class="text-center"> Find us</h1> 
-                         <div class="row map card">    
+                <h1 class="text-center h-tag"> Find us</h1> 
+                         <div class="row ">    
                          <!-- Map Column -->
                                 <div class="col-12">
                                    <!-- Embedded Google Map -->
-                                        <!-- <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJK6sgElehU0YRuwnp8VqwmS4&key=AIzaSyCPTl_O2Y9HjQ2TN02K572kcDn59hTpcLM"></iframe>-->
-                                                <img src='app/themes/internalsite/img/map.jpg' width="100%" height="400px" >
+                                   <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d36080.48374909171!2d12.969378520378813!3d55.584081694594886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sikea+world+map!5e0!3m2!1sen!2sse!4v1536141812413" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                               
                                 </div>
                          </div>
 
 
                         
-                <h1 class="text-center">Resellers</h1>
+                <h1 class="text-center h-tag">Resellers</h1>
                         <div class="row logo"> 
                                 
                                 <div class= "card col-sm-4">

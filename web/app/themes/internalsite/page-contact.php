@@ -99,10 +99,10 @@ Thank you for contacting us. We will be in touch with you very soon.
 <div class="container contact">
 			<div class="row">
 
-					<div class="col-sm-12 col-md-6 col-lg-6 card">
+					<div class="col-sm-12 col-md-6 col-lg-6 card find">
 						<h1> Find us</h1> 
 							<!-- Embedded Google Map -->
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d563.5200131897059!2d12.999364932510378!3d55.600620423307596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653a1565ba0824d%3A0x42a89f74f7744017!2sResultify!5e0!3m2!1sen!2sse!4v1535721136193" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>									
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d563.5200131897059!2d12.999364932510378!3d55.600620423307596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653a1565ba0824d%3A0x42a89f74f7744017!2sResultify!5e0!3m2!1sen!2sse!4v1535721136193" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>									
 					</div>
 
 					<div class="col-sm-12 col-md-6 col-lg-6 card us ">

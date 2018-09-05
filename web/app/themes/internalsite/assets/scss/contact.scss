@@ -4,6 +4,25 @@
     margin-bottom: 300px;
     background-color: black;
 }
-.us{
-    background-color: aqua;
-}
+
+    @media (min-width: 480px) {
+        .contact{
+          max-width: 100%;
+          height: auto;
+          margin:100px;
+          padding: 80px;
+          margin-bottom: 300px;
+          background-color: black;
+        }
+      }
+      
+      @media (min-width: 700px) {
+        .contact {
+          max-width: 100%;
+          height: auto;
+          margin:100px;
+    padding: 80px;
+    margin-bottom: 300px;
+    background-color: black;
+        }
+      }

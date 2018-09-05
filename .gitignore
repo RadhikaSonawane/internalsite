@@ -1,7 +1,5 @@
-web/app/plugins/*
-web/app/upgrade/*
-web/app/uploads/*
-web/app/mu-plugins/*
+
+
 web/app/themes/twentyseventeen/*
 
 !web/app/plugins/.gitkeep

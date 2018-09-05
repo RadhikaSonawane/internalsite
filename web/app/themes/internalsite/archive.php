@@ -28,7 +28,7 @@ get_header();
                                                 </div>
 
                                 <div class="card-body">
-                                        <h3 class="card-title"><a href="<?php the_permalink(); ?>"><?php echo $post->post_title; ?></a></h3>
+                                        <h3 class="card-title test"><a href="<?php the_permalink(); ?>"><?php echo $post->post_title; ?></a></h3>
                                         <?php the_excerpt();?>
                                 </div>
                                         

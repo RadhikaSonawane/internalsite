@@ -2,10 +2,10 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-9">
+        <div class="col-sm-12 col-lg-8">
             <?php if (have_posts()) { ?>
             <?php while (have_posts()) { the_post() ?>
-            <div class="card-title" style="font-size: 18px;">
+            <div class="card-title test" style="font-size: 18px;">
                 <h1><?php the_title();?></h1>
             </div> 
 
@@ -29,9 +29,9 @@
             </div>
         </div> <!--/col-md-9-->
 
-        <div class="sidebar text-center">
-                <div class="col-md-3">
-                    <div class="row">
+         
+                <div class="col-sm-12 col-sm-8 col-lg-4">
+                    <div class="container-fluid blog-sidebar">
                                 <div class="sitebar">
                                     <?php if(is_active_sidebar('custom-side-bar')):?>
                                     <?php dynamic_sidebar('custom-side-bar');?>
@@ -39,7 +39,7 @@
                                 </div>
                     </div>  <!--/row-->
                 </div><!--/col-md-3-->
-        </div>
+       
 
     </div>  <!--/row-->
 </div><!--/container-->

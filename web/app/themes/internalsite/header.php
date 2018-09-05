@@ -10,13 +10,13 @@
 	<link rel="stylesheet" type="text/css" href="app/themes/internalsite/assets/css/main.css">
 	<?php wp_head(); ?>
 
-	<title>Internalsite</title>
+	<title class="title">Internalsite</title>
 </head>
 <body>
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
-		<img src="app/themes/internalsite/img/logo.jpeg" alt="Company logo" style="width:50px;height:50px;">
+		<img class= "clogo" src="app/themes/internalsite/img/logo.jpeg" alt="Company logo" >
 			<b><a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('title'); ?></a></b>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -31,6 +31,8 @@
 					'menu_class' => 'navbar-nav', // ul class
 				]);
 			?>
+
+			<div class="search"><?php get_search_form()?></div>
 			<!-- end primary_menu -->
 
 		</div>
