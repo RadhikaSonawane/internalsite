@@ -55,7 +55,7 @@ get_header();
 
 
                         
-                <h1 class="text-center h-tag">Resellers</h1>
+                <h1 class="text-center h-tag">Customers</h1>
                         <div class="row logo"> 
                                 
                                 <div class= "card col-sm-4">

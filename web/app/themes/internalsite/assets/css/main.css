@@ -24,7 +24,7 @@ li a {
   text-decoration: none; }
 
 li a:hover {
-  color: #f1f1f1; }
+  color: black; }
 
 .widget-content {
   background-color: #f5f2ed;
@@ -245,7 +245,7 @@ p {
 @media screen and (min-width: 480px) {
   .gallery {
     min-width: 100%; } }
-.test h1 {
+.test h1, .test a {
   color: #4d4d4d;
   font-family: 'IntroRust-Base'; }
 
