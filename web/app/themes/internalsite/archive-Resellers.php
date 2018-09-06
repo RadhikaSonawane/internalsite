@@ -30,7 +30,7 @@ get_header();
                                                 <?php } ?>  
                                         </div>
 
-                                        <div class="card-body">
+                                        <div class="re">
                                                 <h3 class="card-title test"><a href="<?php the_permalink(); ?>"><?php echo $post->post_title; ?></a></h3>
                                                 <?php the_excerpt();?>
                                         </div>

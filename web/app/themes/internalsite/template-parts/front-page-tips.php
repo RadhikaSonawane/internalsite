@@ -11,7 +11,7 @@
         $post_url = $data->guid;
     }
     ?>
-    <h1 class="my-4 text-center text"><a href="<?php echo get_tag_link(3); ?>">Tips</a><h1>
+    <h1 class="my-4 text-center text"><a  href="<?php echo get_tag_link(3); ?>">Tips</a><h1>
 
 
             <?php

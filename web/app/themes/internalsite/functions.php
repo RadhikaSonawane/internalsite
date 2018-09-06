@@ -81,14 +81,14 @@ function pietergoosen_theme_setup() {
 
   /* change excerpt length to 80 words */
   function modify_read_more_link() {
-    return '<br/><a class="more-link btn btn-outline-light" href="' . get_permalink() . '"><b>Read More</b></a>';
+    return '<br/><a class="more-link btn btn-outline-dark" href="' . get_permalink() . '">Read More</a>';
 }
 add_filter( 'the_content_more_link', 'modify_read_more_link' );
 
   // Replaces the excerpt "Read More" text by a link
   function new_excerpt_more($more) {
   global $post;
-return '<br/><a class="moretag btn btn-outline-light" href="'. get_permalink($post->ID) . '"> <b>Read More</b></a>';
+return '<br/><a class="moretag btn btn-outline-dark" href="'. get_permalink($post->ID) . '"> Read More</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 

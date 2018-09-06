@@ -42,9 +42,36 @@ footer {
   height: 100px; }
 
 #social_media_links {
+  /* Style all font awesome icons */
+  /* Add a hover effect if you want */
+  /* Set a specific color for each brand */
+  /* Facebook */
+  /* Twitter */
   font-size: 50px;
   text-align: center;
-  color: #DCDCDC; }
+  color: #f5f2ed; }
+  #social_media_links .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%; }
+  #social_media_links .fa:hover {
+    opacity: 0.7; }
+  #social_media_links .fa-facebook {
+    background: black;
+    color: #f5f2ed; }
+  #social_media_links .fa-twitter {
+    background: black;
+    color: #f5f2ed; }
+  #social_media_links .fa-linkedin {
+    background: black;
+    color: #f5f2ed; }
+  #social_media_links .fa-instagram {
+    background: black;
+    color: #f5f2ed; }
 
 h1 {
   font-size: 32px; }
@@ -95,7 +122,7 @@ h1 h2 h3 {
     width: 100%;
     height: 350px; }
   .inspiration .in {
-    background-color: #DCDCDC;
+    background-color: #f5f2ed;
     margin-bottom: 15px; }
 
 .mySlides {
@@ -125,7 +152,7 @@ h1 h2 h3 {
     width: 90%; } }
 
 .about {
-  background-color: #DCDCDC;
+  background-color: #f5f2ed;
   /* visited link */
   /* mouse over link */
   /* selected link */ }
@@ -139,11 +166,11 @@ h1 h2 h3 {
     color: #000; }
 
 .tips {
-  background-color: #DCDCDC; }
+  background-color: #f5f2ed; }
   .tips a {
     color: #4d4d4d; }
   .tips .ti {
-    background-color: #DCDCDC;
+    background-color: #f5f2ed;
     margin-bottom: 15px; }
 
 .tips-archive {
@@ -152,6 +179,9 @@ h1 h2 h3 {
 .reseller .card-img-top {
   border: 1px solid #ddd;
   padding: 5px; }
+
+.re {
+  background-color: #f5f2ed; }
 
 .resellers {
   margin-top: 30px; }

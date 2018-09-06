@@ -8,9 +8,48 @@ footer{
 }
 
 #social_media_links {
+
+    /* Style all font awesome icons */
+.fa {
+    padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: black;
+    color:  #f5f2ed;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: black;
+    color:  #f5f2ed;
+}
+
+.fa-linkedin {
+    background: black;
+    color:  #f5f2ed;
+  }
+  .fa-instagram {
+    background: black;
+    color: #f5f2ed;
+  }
     font-size: 50px;
     text-align: center;
-    color:#DCDCDC;
+    color: #f5f2ed; 
     
 }
 
