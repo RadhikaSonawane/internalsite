@@ -253,6 +253,10 @@ p {
   color: #4d4d4d;
   font-family: 'IntroRust-Base'; }
 
+.gallery a {
+  margin-left: 70px;
+  margin-bottom: 20px; }
+
 .contact {
   margin: 100px;
   padding: 80px;
