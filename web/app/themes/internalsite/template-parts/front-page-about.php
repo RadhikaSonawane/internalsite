@@ -18,20 +18,20 @@
   ?>
 
     <div class="row ">
-    <br/><br/>
-        <?php while ($about->have_posts()) : ?>
-          <?php $about->the_post(); ?>
-
-          <div class="">
-                <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-                <?php the_content(); ?>
                 <br/><br/>
-         </div>
+                        <?php while ($about->have_posts()) : ?>
+                        <?php $about->the_post(); ?>
 
-        </div><!-- /.about-->
+                        <div class="">
+                           <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                           <?php the_content(); ?>
+                           <br/><br/>
+                        </div>
 
-        <?php endwhile; ?>
-         </div><!-- /.row -->
+    </div><!-- /.row -->
+
+                        <?php endwhile; ?>
+   </div><!-- /.container -->
 
          <?php
                  endif;

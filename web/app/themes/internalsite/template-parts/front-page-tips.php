@@ -26,20 +26,20 @@
                         ?>
 
                   <div class="row">
-                            <?php while ($tips->have_posts()) : ?>
-                                    <?php $tips->the_post(); ?>
+                         <?php while ($tips->have_posts()) : ?>
+                           <?php $tips->the_post(); ?>
 
-                    
-                    <div class="col-sm-4 card text-center">
+                        
+                        <div class="col-sm-4 card text-center">
 
-                            <?php the_post_thumbnail('tips-image');?>
-                        <div class="ti">
-                            <h3 class="homepage-post-title test"><a href="<?php the_permalink(); ?>"><?php echo $post->post_title; ?></a></h3>
-                            <?php the_excerpt(); ?>
-                       </div>
-                     </div>
+                                <?php the_post_thumbnail('tips-image');?>
+                            <div class="ti">
+                                <h3 class="homepage-post-title test"><a href="<?php the_permalink(); ?>"><?php echo $post->post_title; ?></a></h3>
+                                <?php the_excerpt(); ?>
+                            </div>
+                        </div>
 
-                        <?php endwhile; ?>
+                            <?php endwhile; ?>
 
 			</div><!-- /.row -->
 
@@ -48,4 +48,4 @@
 		?>
 
 
-</div>
+</div><!-- /.container-->

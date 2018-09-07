@@ -17,7 +17,7 @@
             <?php
                     // hämta ut alla blogginlägg från kategorin USPs
                    $inspiration = new WP_Query([
-                        'cat' => 2,					// hämta bara inlägg ifrån kategori med ID 4
+                        'cat' => 2,					// hämta bara inlägg ifrån kategori med ID 2
                         'order_by' => 'post_title',	// sortera efter inläggets titel
                         'order' => 'ASC',			// sortera i bokstavsordning (A-Z)
                         'posts_per_page' => 3,		// hur många inlägg per sida vill vi visa
@@ -48,4 +48,4 @@
 		?>
 
 
-</div>
+</div><!-- /.container -->
