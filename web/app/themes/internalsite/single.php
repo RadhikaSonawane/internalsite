@@ -16,6 +16,20 @@
             </div>
             <br/>
 
+            <div class="row">
+                    <?php 
+                    $images = get_field('gallery');
+                    $size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
+
+                    if( $images ): ?>
+                        <div class="gallery">
+                            <?php foreach( $images as $image ): ?>
+                                   <a class="Responsive-image"> <?php echo wp_get_attachment_image( $image['ID'], $size ); ?></a>
+                            <?php endforeach; ?>
+                        </div>
+                    <?php endif; ?>
+            </div><br/>
+
             <div class="card-text">
                 <?php the_content(); ?>
                 <?php get_template_part('partials/content', 'single');?> 
