@@ -9,6 +9,7 @@
                 <h1><?php the_title();?></h1>
             </div> 
 
+             <!-- Add image-->
             <div class="img-fluid" >
                 <?php if ( has_post_thumbnail() ) { ?>
                 <img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" alt="Card image cap">
@@ -16,11 +17,14 @@
             </div>
             <br/>
 
+
+             <!-- Add Content -->
             <div class="card-text">
                     <?php the_content(); ?> 
                     <?php $postid = get_the_ID();?>
                     
-
+                    
+              <!-- Add Comment section -->          
                 <?php get_template_part('comment', 'comment');?>
                 <?php $args = array(
                     'post_id' => $postid,
@@ -58,7 +62,9 @@
                             <?php } ?> <!--/if-->
             </div><!--/card-text-->
         </div> <!--/col-md-9-->
- 
+
+
+        <!-- Add sidebar-->                       
         <div class="col-sm-12 col-sm-8 col-lg-4">
                     <div class="container-fluid blog-sidebar">
                                 <div class="sitebar">

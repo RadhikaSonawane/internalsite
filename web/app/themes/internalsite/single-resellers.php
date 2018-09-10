@@ -18,6 +18,8 @@
                 <?php } ?>  
             </div>
             <br/>
+
+            <!--ACF Add Gallery-->
             <div class="row">
                     <?php 
                     $images = get_field('gallery');
@@ -32,6 +34,7 @@
                     <?php endif; ?>
             </div><br/>
 
+            <!--ACF Add Price -->
             <div class="card-text">
                 <?php the_content(); ?>
                 <?php get_template_part('partials/content', 'single');?> 
@@ -46,7 +49,8 @@
             </div>
         </div> <!--/col-md-9-->
 
-       
+
+       <!-- Add sidebar-->
        <div class="col-sm-12 col-sm-8 col-lg-4">
                     <div class="container-fluid blog-sidebar">
                                 <div class="sitebar">
