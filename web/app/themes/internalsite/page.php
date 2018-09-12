@@ -22,6 +22,8 @@ get_header(); // header.php
                     <?php endif; ?>
             </div><br/>
 
+  <?php get_template_part('flexible-content', 'flexible-content');?>
+  
 			<?php the_content(); ?>
 		<?php } ?>
 	<?php } else { ?>

@@ -34,6 +34,8 @@
                     <?php endif; ?>
             </div><br/>
 
+              <?php get_template_part('flexible-content', 'flexible-content');?>
+
             <!--ACF Add Price -->
             <div class="card-text">
                 <?php the_content(); ?>

@@ -17,7 +17,7 @@
             </div>
             <br/>
 
-
+                      <?php get_template_part('flexible-content', 'flexible-content');?>
              <!-- Add Content -->
             <div class="card-text">
                     <?php the_content(); ?> 
