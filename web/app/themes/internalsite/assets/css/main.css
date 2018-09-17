@@ -279,14 +279,20 @@ p {
     padding: 80px;
     margin-bottom: 300px;
     background-color: black; } }
-.blog a {
-  color: black; }
-.blog .text {
-  margin: 10px; }
-.blog .thum-img {
-  margin: 10px; }
-.blog .card {
-  background-color: #f5f2ed; }
+.blog {
+  background-color: #2d1d1d;
+  margin-bottom: 10px; }
+  .blog a {
+    color: black; }
+  .blog .text {
+    margin: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 100px 10px; }
+  .blog .thum-img {
+    margin: 10px; }
+  .blog .card {
+    background-color: #f5f2ed; }
 
 .blog-con {
   margin-top: 2rem;
