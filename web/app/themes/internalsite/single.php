@@ -16,7 +16,6 @@
             </div>
             <br/>
 
-             <?php get_template_part('flexible-content', 'flexible-content');?>
 
             <div class="row">
                     <?php 
