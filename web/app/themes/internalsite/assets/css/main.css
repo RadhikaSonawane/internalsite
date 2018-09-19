@@ -280,7 +280,7 @@ p {
     margin-bottom: 300px;
     background-color: black; } }
 .blog {
-  background-color: #2d1d1d;
+  background-color: #5c5455;
   margin-bottom: 10px; }
   .blog a {
     color: black; }
@@ -297,10 +297,5 @@ p {
 .blog-con {
   margin-top: 2rem;
   margin-bottom: 2rem; }
-
-.pics {
-  margin-left: 50px;
-  margin-top: 20px;
-  margin-bottom: 20px; }
 
 /*# sourceMappingURL=main.css.map */
