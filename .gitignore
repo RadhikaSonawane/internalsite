@@ -1,5 +1,4 @@
-
-
+web/app/uploads
 web/app/themes/twentyseventeen/*
 
 !web/app/plugins/.gitkeep
