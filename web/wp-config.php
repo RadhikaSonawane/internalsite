@@ -7,3 +7,5 @@
 require_once(dirname(__DIR__) . '/vendor/autoload.php');
 require_once(dirname(__DIR__) . '/config/application.php');
 require_once(ABSPATH . 'wp-settings.php');
+
+define( 'WPMDB_LICENCE', '55c87ba0-ee54-4e74-ac49-648e2a69ed6b' );
