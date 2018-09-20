@@ -40,7 +40,8 @@
     "wpackagist-plugin/awesome-responsive-photo-gallery": "1.0.5",
     "wpackagist-plugin/ninja-forms": "3.3.13",
     "wpackagist-plugin/contact-form-7-to-post": "1.0.0",
-    "wpackagist-plugin/woocommerce": "^3.4"
+    "wpackagist-plugin/woocommerce": "^3.4",
+    "wpackagist-plugin/wp-migrate-db": "^1.0"
   },
   "require-dev": {
     "wp-coding-standards/wpcs": "^0.14.0"

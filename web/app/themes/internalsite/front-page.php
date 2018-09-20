@@ -13,5 +13,6 @@ get_template_part('template-parts/front-page', 'slideshow');
 get_template_part('template-parts/front-page', 'about');
 get_template_part('template-parts/front-page', 'inspiration');
 get_template_part('template-parts/front-page', 'tips'); 
+get_template_part('template-parts/front-page', 'woocommerce'); 
 
 get_footer(); //footer.php
