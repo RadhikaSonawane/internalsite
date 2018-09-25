@@ -187,4 +187,43 @@ function add_last_nav_item($items, $args) {
 }
 add_filter( 'wp_nav_menu_items', 'add_last_nav_item', 10, 2 );
 
+/*second sidebar for woocomerce*/
+function themename_widgets_init() {
+  register_sidebar( array(
+      'name'          => __( 'Primary Sidebar', 'theme_name' ),
+      'id'            => 'sidebar-1',
+      'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+      'after_widget'  => '</aside>',
+      'before_title'  => '<h1 class="widget-title">',
+      'after_title'   => '</h1>',
+  ) );
+
+  register_sidebar( array(
+      'name'          => __( 'Secondary Sidebar', 'theme_name' ),
+      'id'            => 'sidebar-2',
+      'before_widget' => '<ul><li id="%1$s" class="widget %2$s">',
+      'after_widget'  => '</li></ul>',
+      'before_title'  => '<h3 class="widget-title">',
+      'after_title'   => '</h3>',
+  ) );
+}
+add_action( 'widgets_init', 'themename_widgets_init' );
+
+/* woocommerce theme support */ 
+function mytheme_add_woocommerce_support() {
+	add_theme_support( 'woocommerce' );
+}
+add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+
+
+//remove woocommers related product 
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
+// Remove the additional information tab (woocommers)
+function woo_remove_product_tabs( $tabs ) {
+  unset( $tabs['additional_information'] );
+  return $tabs;
+}
+add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
+
 

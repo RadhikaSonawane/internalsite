@@ -33,7 +33,6 @@
 
             <div class="card-text">
                 <?php the_content(); ?>
-                <?php get_template_part('partials/content', 'single');?> 
                 <?php //get_template_part('partials/content', 'related');?>
                 <?php } ?> <!--/while-->
             <?php } else { ?>

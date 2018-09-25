@@ -1,0 +1,89 @@
+.product{
+    margin-top: 15px;  
+    .button{
+        background-color: red; /* Green */
+        border: none;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+}
+.internal{
+        background-color: rgb(92, 84, 85);
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        }
+.internal a { 
+        color:white; 
+        } 
+
+.internal {
+    .button{
+    background-color: red; /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+} 
+img{
+    margin: 10px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+}
+.onsale{
+    border-radius: 100%;
+    margin:20px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    padding: 10px;
+    color:white;
+    background-color:red;
+}
+
+.woocommerce-pagination{
+float: left;
+}
+.sidebar{
+    margin-top: 50px;
+    a img{
+    width: 200px;
+    height:200px;
+}
+h3{
+    color:#818181;
+}
+}
+
+a h3{
+color:black;
+}
+
+.product-title{
+    margin:6px; 
+}
+
+.orderby{
+    background-color: red;
+    font-size: 2em;
+    color:white;
+    text-align: center;
+}
+.woocommerce-breadcrumb{
+    position: relative;
+    background-color: black;
+    color:white;
+    a{
+        color:white;
+    }
+}

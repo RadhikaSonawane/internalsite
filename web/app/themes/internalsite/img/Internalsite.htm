@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://localhost:8888/?product=t-shirt-with-logo -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Required meta tags -->
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./Internalsite_files/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="./Internalsite_files/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./Internalsite_files/main.css">
+	<link href="./Internalsite_files/mdb.min.css" rel="stylesheet">
+	<meta name="robots" content="noindex,follow">
+<link rel="dns-prefetch" href="http://code.jquery.com/">
+<link rel="dns-prefetch" href="http://cdnjs.cloudflare.com/">
+<link rel="dns-prefetch" href="http://maxcdn.bootstrapcdn.com/">
+<link rel="dns-prefetch" href="http://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Internal-site » T-Shirt with Logo Comments Feed" href="http://localhost:8888/?feed=rss2&amp;p=362">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"wpemoji":"http:\/\/localhost:8888\/wp\/wp-includes\/js\/wp-emoji.js?ver=4.9.8","twemoji":"http:\/\/localhost:8888\/wp\/wp-includes\/js\/twemoji.js?ver=4.9.8"}};
+			( function( window, document, settings ) {
+	var src, ready, ii, tests;
+
+	/*
+	 * Create a canvas element for testing native browser support
+	 * of emoji.
+	 */
+	var canvas = document.createElement( 'canvas' );
+	var context = canvas.getContext && canvas.getContext( '2d' );
+
+	/**
+	 * Check if two sets of Emoji characters render the same.
+	 *
+	 * @param set1 array Set of Emoji characters.
+	 * @param set2 array Set of Emoji characters.
+	 * @returns {boolean} True if the two sets render the same.
+	 */
+	function emojiSetsRenderIdentically( set1, set2 ) {
+		var stringFromCharCode = String.fromCharCode;
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, canvas.width, canvas.height );
+		context.fillText( stringFromCharCode.apply( this, set1 ), 0, 0 );
+		var rendered1 = canvas.toDataURL();
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, canvas.width, canvas.height );
+		context.fillText( stringFromCharCode.apply( this, set2 ), 0, 0 );
+		var rendered2 = canvas.toDataURL();
+
+		return rendered1 === rendered2;
+	}
+
+	/**
+	 * Detect if the browser supports rendering emoji or flag emoji. Flag emoji are a single glyph
+	 * made of two characters, so some browsers (notably, Firefox OS X) don't support them.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param type {String} Whether to test for support of "flag" or "emoji".
+	 * @return {Boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( type ) {
+		var isIdentical;
+
+		if ( ! context || ! context.fillText ) {
+			return false;
+		}
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		switch ( type ) {
+			case 'flag':
+				/*
+				 * Test for UN flag compatibility. This is the least supported of the letter locale flags,
+				 * so gives us an easy test for full support.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly ([U] + [N]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[ 55356, 56826, 55356, 56819 ],
+					[ 55356, 56826, 8203, 55356, 56819 ]
+				);
+
+				if ( isIdentical ) {
+					return false;
+				}
+
+				/*
+				 * Test for English flag compatibility. England is a country in the United Kingdom, it
+				 * does not have a two letter locale code but rather an five letter sub-division code.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (black flag emoji + [G] + [B] + [E] + [N] + [G]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[ 55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447 ],
+					[ 55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447 ]
+				);
+
+				return ! isIdentical;
+			case 'emoji':
+				/*
+				 * She's the hero Emoji deserves, but not the one it needs right now.
+				 *
+				 * To test for support, try to render a new emoji (female superhero),
+				 * then compare it to how it would look if the browser doesn't render it correctly
+				 * (superhero + female sign).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[55358, 56760, 9792, 65039],
+					[55358, 56760, 8203, 9792, 65039]
+				);
+				return ! isIdentical;
+		}
+
+		return false;
+	}
+
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+
+		script.src = src;
+		script.defer = script.type = 'text/javascript';
+		document.getElementsByTagName( 'head' )[0].appendChild( script );
+	}
+
+	tests = Array( 'flag', 'emoji' );
+
+	settings.supports = {
+		everything: true,
+		everythingExceptFlag: true
+	};
+
+	for( ii = 0; ii < tests.length; ii++ ) {
+		settings.supports[ tests[ ii ] ] = browserSupportsEmoji( tests[ ii ] );
+
+		settings.supports.everything = settings.supports.everything && settings.supports[ tests[ ii ] ];
+
+		if ( 'flag' !== tests[ ii ] ) {
+			settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && settings.supports[ tests[ ii ] ];
+		}
+	}
+
+	settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && ! settings.supports.flag;
+
+	settings.DOMReady = false;
+	settings.readyCallback = function() {
+		settings.DOMReady = true;
+	};
+
+	if ( ! settings.supports.everything ) {
+		ready = function() {
+			settings.readyCallback();
+		};
+
+		if ( document.addEventListener ) {
+			document.addEventListener( 'DOMContentLoaded', ready, false );
+			window.addEventListener( 'load', ready, false );
+		} else {
+			window.attachEvent( 'onload', ready );
+			document.attachEvent( 'onreadystatechange', function() {
+				if ( 'complete' === document.readyState ) {
+					settings.readyCallback();
+				}
+			} );
+		}
+
+		src = settings.source || {};
+
+		if ( src.concatemoji ) {
+			addScript( src.concatemoji );
+		} else if ( src.wpemoji && src.twemoji ) {
+			addScript( src.twemoji );
+			addScript( src.wpemoji );
+		}
+	}
+
+} )( window, document, window._wpemojiSettings );
+		</script><script src="./Internalsite_files/twemoji.js" type="text/javascript" defer=""></script><script src="./Internalsite_files/wp-emoji.js" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="dashicons-css" href="./Internalsite_files/dashicons.css" type="text/css" media="all">
+<link rel="stylesheet" id="admin-bar-css" href="./Internalsite_files/admin-bar.css" type="text/css" media="all">
+<link rel="stylesheet" id="woocommerce-layout-css" href="./Internalsite_files/woocommerce-layout.css" type="text/css" media="all">
+<link rel="stylesheet" id="woocommerce-smallscreen-css" href="./Internalsite_files/woocommerce-smallscreen.css" type="text/css" media="only screen and (max-width: 768px)">
+<link rel="stylesheet" id="woocommerce-general-css" href="./Internalsite_files/woocommerce.css" type="text/css" media="all">
+<style id="woocommerce-inline-inline-css" type="text/css">
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel="stylesheet" id="bootstrap4-styles-css" href="./Internalsite_files/bootstrap.min(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="mbt-styles-css" href="./Internalsite_files/style.css" type="text/css" media="all">
+<link rel="https://api.w.org/" href="http://localhost:8888/index.php?rest_route=/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://localhost:8888/wp/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://localhost:8888/wp/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.9.8">
+<meta name="generator" content="WooCommerce 3.4.5">
+<link rel="canonical" href="http://localhost:8888/?product=t-shirt-with-logo">
+<link rel="shortlink" href="http://localhost:8888/?p=362">
+<link rel="alternate" type="application/json+oembed" href="http://localhost:8888/index.php?rest_route=%2Foembed%2F1.0%2Fembed&amp;url=http%3A%2F%2Flocalhost%3A8888%2F%3Fproduct%3Dt-shirt-with-logo">
+<link rel="alternate" type="text/xml+oembed" href="http://localhost:8888/index.php?rest_route=%2Foembed%2F1.0%2Fembed&amp;url=http%3A%2F%2Flocalhost%3A8888%2F%3Fproduct%3Dt-shirt-with-logo&amp;format=xml">
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+<style type="text/css" media="screen">
+	html { margin-top: 32px !important; }
+	* html body { margin-top: 32px !important; }
+	@media screen and ( max-width: 782px ) {
+		html { margin-top: 46px !important; }
+		* html body { margin-top: 46px !important; }
+	}
+</style>
+<link rel="icon" href="http://localhost:8888/app/uploads/2018/08/cropped-logo-2-32x32.jpeg" sizes="32x32">
+<link rel="icon" href="http://localhost:8888/app/uploads/2018/08/cropped-logo-2-192x192.jpeg" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:8888/app/uploads/2018/08/cropped-logo-2-180x180.jpeg">
+<meta name="msapplication-TileImage" content="http://localhost:8888/app/uploads/2018/08/cropped-logo-2-270x270.jpeg">
+
+	<title class="title">Internalsite</title>
+</head>
+<body class=" customize-support">
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+		<img class="clogo" src="./Internalsite_files/logo.jpeg" alt="Company logo">
+			<b><a class="navbar-brand" href="http://localhost:8888/">Internal-site</a></b>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+                 <!-- start primary_menu -->
+			<div id="navbarNav" class="collapse navbar-collapse"><ul id="menu-menu1" class="navbar-nav"><li id="menu-item-109" class="menu-item menu-item-type-post_type_archive menu-item-object-resellers menu-item-109"><a href="http://localhost:8888/?post_type=resellers">Reseller</a></li>
+<li id="menu-item-172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-172"><a href="http://localhost:8888/?page_id=147">Contact us</a></li>
+<li id="menu-item-182" class="menu-item menu-item-type-post_type_archive menu-item-object-blog menu-item-182"><a href="http://localhost:8888/?post_type=blog">All blogs</a></li>
+<li id="menu-item-399" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-399"><a href="http://localhost:8888/?page_id=211">Products</a></li>
+</ul></div>
+			<div class="search"><form role="search" method="get" class="search-form" action="http://localhost:8888/">
+    <div>
+        <label>
+        <span class="screen-reader-text"></span>
+        <input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:">
+    </label>
+    <input type="submit" class="search-submit" value="Search">
+    </div>
+</form>
+</div>
+			<!-- end primary_menu -->
+
+		</div>
+	</nav>
+	<!-- end site header -->
+
+    
+	<div id="primary" class="content-area"><main id="main" class="site-main" role="main"><nav class="woocommerce-breadcrumb"><a href="http://localhost:8888/">Home</a>&nbsp;/&nbsp;<a href="http://localhost:8888/?product_cat=clothing">Clothing</a>&nbsp;/&nbsp;<a href="http://localhost:8888/?product_cat=tshirts">Tshirts</a>&nbsp;/&nbsp;T-Shirt with Logo</nav>
+		
+			<div id="product-362" class="post-362 product type-product status-publish has-post-thumbnail product_cat-tshirts first instock shipping-taxable purchasable product-type-simple">
+<div class="container">
+ <div class="row">
+	<div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images" data-columns="4" style="opacity: 1; transition: opacity 0.25s ease-in-out 0s;">
+	<figure class="woocommerce-product-gallery__wrapper">
+		<div data-thumb="http://localhost:8888/app/uploads/2018/09/t-shirt-with-logo-1-100x100.jpg" class="woocommerce-product-gallery__image"><a href="http://localhost:8888/app/uploads/2018/09/t-shirt-with-logo-1.jpg"><img width="600" height="600" src="./Internalsite_files/t-shirt-with-logo-1-768x768.jpg" class="wp-post-image" alt="" title="t-shirt-with-logo-1.jpg" data-caption="" data-src="http://localhost:8888/app/uploads/2018/09/t-shirt-with-logo-1.jpg" data-large_image="http://localhost:8888/app/uploads/2018/09/t-shirt-with-logo-1.jpg" data-large_image_width="800" data-large_image_height="800" srcset="http://localhost:8888/app/uploads/2018/09/t-shirt-with-logo-1-768x768.jpg 768w, http://localhost:8888/app/uploads/2018/09/t-shirt-with-logo-1-150x150.jpg 150w, http://localhost:8888/app/uploads/2018/09/t-shirt-with-logo-1-300x300.jpg 300w, http://localhost:8888/app/uploads/2018/09/t-shirt-with-logo-1-100x100.jpg 100w, http://localhost:8888/app/uploads/2018/09/t-shirt-with-logo-1-250x250.jpg 250w, http://localhost:8888/app/uploads/2018/09/t-shirt-with-logo-1-350x350.jpg 350w, http://localhost:8888/app/uploads/2018/09/t-shirt-with-logo-1.jpg 800w" sizes="(max-width: 600px) 100vw, 600px"></a></div>	</figure>
+</div>
+	 <div class="col-sm-12 col-lg-8 summary entry-summary">
+		<h1 class="product_title entry-title">T-Shirt with Logo</h1><p class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>18.00</span></p>
+<div class="woocommerce-product-details__short-description">
+	<p>This is a simple product.</p>
+</div>
+
+	
+	<form class="cart" action="http://localhost:8888/?product=t-shirt-with-logo" method="post" enctype="multipart/form-data">
+		
+			<div class="quantity">
+		<label class="screen-reader-text" for="quantity_5ba4e5f4c20c9">Quantity</label>
+		<input type="number" id="quantity_5ba4e5f4c20c9" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="">
+	</div>
+	
+		<button type="submit" name="add-to-cart" value="362" class="single_add_to_cart_button button alt">Add to cart</button>
+
+			</form>
+
+	
+<div class="product_meta">
+
+	
+	
+		<span class="sku_wrapper">SKU: <span class="sku">Woo-tshirt-logo</span></span>
+
+	
+	<span class="posted_in">Category: <a href="http://localhost:8888/?product_cat=tshirts" rel="tag">Tshirts</a></span>
+	
+	
+</div>
+
+	</div>
+	
+	
+	<div class="woocommerce-tabs wc-tabs-wrapper">
+		<ul class="tabs wc-tabs" role="tablist">
+							<li class="description_tab active" id="tab-title-description" role="tab" aria-controls="tab-description">
+					<a href="http://localhost:8888/?product=t-shirt-with-logo#tab-description">Description</a>
+				</li>
+							<li class="reviews_tab" id="tab-title-reviews" role="tab" aria-controls="tab-reviews">
+					<a href="http://localhost:8888/?product=t-shirt-with-logo#tab-reviews">Reviews (0)</a>
+				</li>
+					</ul>
+					<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab" id="tab-description" role="tabpanel" aria-labelledby="tab-title-description" style="">
+				
+  <h2>Description</h2>
+
+<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+			</div>
+					<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews panel entry-content wc-tab" id="tab-reviews" role="tabpanel" aria-labelledby="tab-title-reviews" style="display: none;">
+				<div id="reviews" class="woocommerce-Reviews">
+	<div id="comments">
+		<h2 class="woocommerce-Reviews-title">Reviews</h2>
+
+		
+			<p class="woocommerce-noreviews">There are no reviews yet.</p>
+
+			</div>
+
+	
+		<div id="review_form_wrapper">
+			<div id="review_form">
+					<div id="respond" class="comment-respond">
+		<span id="reply-title" class="comment-reply-title">Be the first to review “T-Shirt with Logo” <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://localhost:8888/?product=t-shirt-with-logo#respond" style="display:none;">Cancel reply</a></small></span>			<form action="http://localhost:8888/wp/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<div class="comment-form-rating"><label for="rating">Your rating</label><p class="stars"><span><a class="star-1" href="http://localhost:8888/?product=t-shirt-with-logo#">1</a><a class="star-2" href="http://localhost:8888/?product=t-shirt-with-logo#">2</a><a class="star-3" href="http://localhost:8888/?product=t-shirt-with-logo#">3</a><a class="star-4" href="http://localhost:8888/?product=t-shirt-with-logo#">4</a><a class="star-5" href="http://localhost:8888/?product=t-shirt-with-logo#">5</a></span></p><select name="rating" id="rating" aria-required="true" required="" style="display: none;">
+							<option value="">Rate…</option>
+							<option value="5">Perfect</option>
+							<option value="4">Good</option>
+							<option value="3">Average</option>
+							<option value="2">Not that bad</option>
+							<option value="1">Very poor</option>
+						</select></div><p class="comment-form-comment"><label for="comment">Your review&nbsp;<span class="required">*</span></label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required=""></textarea></p><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Submit"> <input type="hidden" name="comment_post_ID" value="362" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><input type="hidden" id="_wp_unfiltered_html_comment_disabled" name="_wp_unfiltered_html_comment" value="20a72d9a49"><script>(function(){if(window===window.parent){document.getElementById('_wp_unfiltered_html_comment_disabled').name='_wp_unfiltered_html_comment';}})();</script>
+			</form>
+			</div><!-- #respond -->
+				</div>
+		</div>
+
+	
+	<div class="clear"></div>
+</div>
+			</div>
+			</div>
+
+</div>
+</div>
+	</div>
+
+
+
+		
+	</main></div>
+			<div class="col-sm-12 col-sm-8 col-lg-4">
+                    <div class="container-fluid blog-sidebar">
+                                <div class="sitebar">
+                                                                        <ul><li id="woocommerce_product_search-2" class="widget woocommerce widget_product_search"><form role="search" method="get" class="woocommerce-product-search" action="http://localhost:8888/">
+	<label class="screen-reader-text" for="woocommerce-product-search-field-0">Search for:</label>
+	<input type="search" id="woocommerce-product-search-field-0" class="search-field" placeholder="Search products…" value="" name="s">
+	<button type="submit" value="Search">Search</button>
+	<input type="hidden" name="post_type" value="product">
+</form>
+</li></ul><ul><li id="woocommerce_products-2" class="widget woocommerce widget_products"><h3 class="widget-title">Products</h3><ul class="product_list_widget"><li>
+	
+	<a href="http://localhost:8888/?product=wordpress-pennant">
+		<img width="300" height="300" src="./Internalsite_files/pennant-1-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" srcset="http://localhost:8888/app/uploads/2018/09/pennant-1-300x300.jpg 300w, http://localhost:8888/app/uploads/2018/09/pennant-1-150x150.jpg 150w, http://localhost:8888/app/uploads/2018/09/pennant-1-768x768.jpg 768w, http://localhost:8888/app/uploads/2018/09/pennant-1-100x100.jpg 100w, http://localhost:8888/app/uploads/2018/09/pennant-1-250x250.jpg 250w, http://localhost:8888/app/uploads/2018/09/pennant-1-350x350.jpg 350w, http://localhost:8888/app/uploads/2018/09/pennant-1.jpg 800w" sizes="(max-width: 300px) 100vw, 300px">		<span class="product-title">WordPress Pennant</span>
+	</a>
+
+				
+	<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>11.05</span>
+	</li>
+<li>
+	
+	<a href="http://localhost:8888/?product=logo-collection">
+		<img width="300" height="300" src="./Internalsite_files/logo-1-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" srcset="http://localhost:8888/app/uploads/2018/09/logo-1-300x300.jpg 300w, http://localhost:8888/app/uploads/2018/09/logo-1-150x150.jpg 150w, http://localhost:8888/app/uploads/2018/09/logo-1-768x767.jpg 768w, http://localhost:8888/app/uploads/2018/09/logo-1-100x100.jpg 100w, http://localhost:8888/app/uploads/2018/09/logo-1-250x250.jpg 250w, http://localhost:8888/app/uploads/2018/09/logo-1-350x350.jpg 350w, http://localhost:8888/app/uploads/2018/09/logo-1.jpg 800w" sizes="(max-width: 300px) 100vw, 300px">		<span class="product-title">Logo Collection</span>
+	</a>
+
+				
+	<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>18.00</span> – <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>45.00</span>
+	</li>
+</ul></li></ul><ul><li id="woocommerce_recently_viewed_products-2" class="widget woocommerce widget_recently_viewed_products"><h3 class="widget-title">Recently Viewed Products</h3><ul class="product_list_widget"><li>
+	
+	<a href="http://localhost:8888/?product=t-shirt-with-logo">
+		<img width="300" height="300" src="./Internalsite_files/t-shirt-with-logo-1-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" srcset="http://localhost:8888/app/uploads/2018/09/t-shirt-with-logo-1-300x300.jpg 300w, http://localhost:8888/app/uploads/2018/09/t-shirt-with-logo-1-150x150.jpg 150w, http://localhost:8888/app/uploads/2018/09/t-shirt-with-logo-1-768x768.jpg 768w, http://localhost:8888/app/uploads/2018/09/t-shirt-with-logo-1-100x100.jpg 100w, http://localhost:8888/app/uploads/2018/09/t-shirt-with-logo-1-250x250.jpg 250w, http://localhost:8888/app/uploads/2018/09/t-shirt-with-logo-1-350x350.jpg 350w, http://localhost:8888/app/uploads/2018/09/t-shirt-with-logo-1.jpg 800w" sizes="(max-width: 300px) 100vw, 300px">		<span class="product-title">T-Shirt with Logo</span>
+	</a>
+
+	
+	<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>18.00</span>
+	</li>
+<li>
+	
+	<a href="http://localhost:8888/?product=belt">
+		<img width="300" height="300" src="./Internalsite_files/belt-2-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" srcset="http://localhost:8888/app/uploads/2018/09/belt-2-300x300.jpg 300w, http://localhost:8888/app/uploads/2018/09/belt-2-150x150.jpg 150w, http://localhost:8888/app/uploads/2018/09/belt-2-768x768.jpg 768w, http://localhost:8888/app/uploads/2018/09/belt-2-100x100.jpg 100w, http://localhost:8888/app/uploads/2018/09/belt-2-250x250.jpg 250w, http://localhost:8888/app/uploads/2018/09/belt-2-350x350.jpg 350w, http://localhost:8888/app/uploads/2018/09/belt-2.jpg 801w" sizes="(max-width: 300px) 100vw, 300px">		<span class="product-title">Belt</span>
+	</a>
+
+	
+	<del><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>65.00</span></del> <ins><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>55.00</span></ins>
+	</li>
+<li>
+	
+	<a href="http://localhost:8888/?product=album">
+		<img width="300" height="300" src="./Internalsite_files/album-1-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" srcset="http://localhost:8888/app/uploads/2018/09/album-1-300x300.jpg 300w, http://localhost:8888/app/uploads/2018/09/album-1-150x150.jpg 150w, http://localhost:8888/app/uploads/2018/09/album-1-768x768.jpg 768w, http://localhost:8888/app/uploads/2018/09/album-1-100x100.jpg 100w, http://localhost:8888/app/uploads/2018/09/album-1-250x250.jpg 250w, http://localhost:8888/app/uploads/2018/09/album-1-350x350.jpg 350w, http://localhost:8888/app/uploads/2018/09/album-1.jpg 800w" sizes="(max-width: 300px) 100vw, 300px">		<span class="product-title">Album</span>
+	</a>
+
+	
+	<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>15.00</span>
+	</li>
+</ul></li></ul>                                                                    </div>
+                    </div>  <!--/row-->
+                </div><!--/col-md-3-->
+	?&gt;
+
+
+  <footer>
+    <div class="container">
+        <div class="row">
+            <div style="color: #f5f2ed;" class="col-sm-12 col-md-6 col-lg-6 ">
+              <h2><a style="color: #f5f2ed;" href="http://localhost:8888/?page_id=147">Contact Us</a></h2>
+              <li>Internalsite AB</li>
+              <li>Regementsgatan 8, 211 42 Malmö</li>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 " id="social_media_links">
+              <a href="http://localhost:8888/?product=t-shirt-with-logo#"><i class="fab fa-facebook"></i></a>
+              <a href="http://localhost:8888/?product=t-shirt-with-logo#"><i class="fab fa-twitter"></i></a>
+              <a href="http://localhost:8888/?product=t-shirt-with-logo#"><i class="fab fa-linkedin"></i></a>
+              <a href="http://localhost:8888/?product=t-shirt-with-logo#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+      <script src="./Internalsite_files/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="./Internalsite_files/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="./Internalsite_files/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script src="./Internalsite_files/script.js"></script>
+      <script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@graph":[{"@context":"https:\/\/schema.org\/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":"1","item":{"name":"Home","@id":"http:\/\/localhost:8888"}},{"@type":"ListItem","position":"2","item":{"name":"Clothing","@id":"http:\/\/localhost:8888\/?product_cat=clothing"}},{"@type":"ListItem","position":"3","item":{"name":"Tshirts","@id":"http:\/\/localhost:8888\/?product_cat=tshirts"}},{"@type":"ListItem","position":"4","item":{"name":"T-Shirt with Logo"}}]},{"@context":"https:\/\/schema.org\/","@type":"Product","@id":"http:\/\/localhost:8888\/?product=t-shirt-with-logo","name":"T-Shirt with Logo","image":"http:\/\/localhost:8888\/app\/uploads\/2018\/09\/t-shirt-with-logo-1.jpg","description":"This is a simple product.","sku":"Woo-tshirt-logo","offers":[{"@type":"Offer","price":"18.00","priceSpecification":{"price":"18.00","priceCurrency":"GBP","valueAddedTaxIncluded":"false"},"priceCurrency":"GBP","availability":"https:\/\/schema.org\/InStock","url":"http:\/\/localhost:8888\/?product=t-shirt-with-logo","seller":{"@type":"Organization","name":"Internal-site","url":"http:\/\/localhost:8888"}}]}]}</script><script type="text/javascript" src="./Internalsite_files/admin-bar.js"></script>
+<script type="text/javascript" src="./Internalsite_files/jquery-3.2.1.slim.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"http:\/\/localhost:8888\/?page_id=328","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Internalsite_files/add-to-cart.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wc_single_product_params = {"i18n_required_rating_text":"Please select a rating","review_rating_required":"yes","flexslider":{"rtl":false,"animation":"slide","smoothHeight":true,"directionNav":false,"controlNav":"thumbnails","slideshow":false,"animationSpeed":500,"animationLoop":false,"allowOneSlide":false},"zoom_enabled":"","zoom_options":[],"photoswipe_enabled":"","photoswipe_options":{"shareEl":false,"closeOnScroll":false,"history":false,"hideAnimationDuration":0,"showAnimationDuration":0},"flexslider_enabled":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Internalsite_files/single-product.js"></script>
+<script type="text/javascript" src="./Internalsite_files/jquery.blockUI.js"></script>
+<script type="text/javascript" src="./Internalsite_files/js.cookie.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Internalsite_files/woocommerce.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_fea4ee7fb403060e7e3962890c017d5c","fragment_name":"wc_fragments_fea4ee7fb403060e7e3962890c017d5c"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Internalsite_files/cart-fragments.js"></script>
+<script type="text/javascript" src="./Internalsite_files/popper.min(1).js"></script>
+<script type="text/javascript" src="./Internalsite_files/bootstrap.min(2).js"></script>
+<script type="text/javascript" src="./Internalsite_files/script(1).js"></script>
+<script type="text/javascript" src="./Internalsite_files/wp-embed.js"></script>
+	<!--[if lte IE 8]>
+		<script type="text/javascript">
+			document.body.className = document.body.className.replace( /(^|\s)(no-)?customize-support(?=\s|$)/, '' ) + ' no-customize-support';
+		</script>
+	<![endif]-->
+	<!--[if gte IE 9]><!-->
+		<script type="text/javascript">
+			(function() {
+				var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+						request = true;
+		
+				b[c] = b[c].replace( rcs, ' ' );
+				// The customizer requires postMessage and CORS (if the site is cross domain)
+				b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+			}());
+		</script>
+	<!--<![endif]-->
+			<div id="wpadminbar" class="">
+							<a class="screen-reader-shortcut" href="http://localhost:8888/?product=t-shirt-with-logo#wp-toolbar" tabindex="1">Skip to toolbar</a>
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu">
+		<li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://localhost:8888/wp/wp-admin/about.php"><span class="ab-icon"></span><span class="screen-reader-text">About WordPress</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu">
+		<li id="wp-admin-bar-about"><a class="ab-item" href="http://localhost:8888/wp/wp-admin/about.php">About WordPress</a>		</li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu">
+		<li id="wp-admin-bar-wporg"><a class="ab-item" href="https://wordpress.org/">WordPress.org</a>		</li>
+		<li id="wp-admin-bar-documentation"><a class="ab-item" href="https://codex.wordpress.org/">Documentation</a>		</li>
+		<li id="wp-admin-bar-support-forums"><a class="ab-item" href="https://wordpress.org/support/">Support Forums</a>		</li>
+		<li id="wp-admin-bar-feedback"><a class="ab-item" href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://localhost:8888/wp/wp-admin/">Internal-site</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-site-name-default" class="ab-submenu">
+		<li id="wp-admin-bar-dashboard"><a class="ab-item" href="http://localhost:8888/wp/wp-admin/">Dashboard</a>		</li></ul><ul id="wp-admin-bar-appearance" class="ab-submenu">
+		<li id="wp-admin-bar-themes"><a class="ab-item" href="http://localhost:8888/wp/wp-admin/themes.php">Themes</a>		</li>
+		<li id="wp-admin-bar-widgets"><a class="ab-item" href="http://localhost:8888/wp/wp-admin/widgets.php">Widgets</a>		</li>
+		<li id="wp-admin-bar-menus"><a class="ab-item" href="http://localhost:8888/wp/wp-admin/nav-menus.php">Menus</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-customize" class="hide-if-no-customize"><a class="ab-item" href="http://localhost:8888/wp/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%3A8888%2F%3Fproduct%3Dt-shirt-with-logo">Customize</a>		</li>
+		<li id="wp-admin-bar-updates"><a class="ab-item" href="http://localhost:8888/wp/wp-admin/update-core.php" title="7 Plugin Updates"><span class="ab-icon"></span><span class="ab-label">7</span><span class="screen-reader-text">7 Plugin Updates</span></a>		</li>
+		<li id="wp-admin-bar-comments"><a class="ab-item" href="http://localhost:8888/wp/wp-admin/edit-comments.php"><span class="ab-icon"></span><span class="ab-label awaiting-mod pending-count count-0" aria-hidden="true">0</span><span class="screen-reader-text">0 comments awaiting moderation</span></a>		</li>
+		<li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://localhost:8888/wp/wp-admin/post-new.php"><span class="ab-icon"></span><span class="ab-label">New</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu">
+		<li id="wp-admin-bar-new-post"><a class="ab-item" href="http://localhost:8888/wp/wp-admin/post-new.php">Post</a>		</li>
+		<li id="wp-admin-bar-new-media"><a class="ab-item" href="http://localhost:8888/wp/wp-admin/media-new.php">Media</a>		</li>
+		<li id="wp-admin-bar-new-page"><a class="ab-item" href="http://localhost:8888/wp/wp-admin/post-new.php?post_type=page">Page</a>		</li>
+		<li id="wp-admin-bar-new-product"><a class="ab-item" href="http://localhost:8888/wp/wp-admin/post-new.php?post_type=product">Product</a>		</li>
+		<li id="wp-admin-bar-new-shop_order"><a class="ab-item" href="http://localhost:8888/wp/wp-admin/post-new.php?post_type=shop_order">Order</a>		</li>
+		<li id="wp-admin-bar-new-shop_coupon"><a class="ab-item" href="http://localhost:8888/wp/wp-admin/post-new.php?post_type=shop_coupon">Coupon</a>		</li>
+		<li id="wp-admin-bar-new-resellers"><a class="ab-item" href="http://localhost:8888/wp/wp-admin/post-new.php?post_type=resellers">Reseller</a>		</li>
+		<li id="wp-admin-bar-new-blog"><a class="ab-item" href="http://localhost:8888/wp/wp-admin/post-new.php?post_type=blog">blog</a>		</li>
+		<li id="wp-admin-bar-new-article"><a class="ab-item" href="http://localhost:8888/wp/wp-admin/post-new.php?post_type=article">article</a>		</li>
+		<li id="wp-admin-bar-new-user"><a class="ab-item" href="http://localhost:8888/wp/wp-admin/user-new.php">User</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-edit"><a class="ab-item" href="http://localhost:8888/wp/wp-admin/post.php?post=362&amp;action=edit">Edit product</a>		</li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
+		<li id="wp-admin-bar-search" class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="http://localhost:8888/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150"><label for="adminbar-search" class="screen-reader-text">Search</label><input type="submit" class="adminbar-button" value="Search"></form></div>		</li>
+		<li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item" aria-haspopup="true" href="http://localhost:8888/wp/wp-admin/profile.php">Howdy, <span class="display-name">admin</span><img alt="" src="./Internalsite_files/8be6359513b9214c785a3ce1987c488d.png" srcset="http://2.gravatar.com/avatar/8be6359513b9214c785a3ce1987c488d?s=52&amp;d=mm&amp;r=g 2x" class="avatar avatar-26 photo" height="26" width="26"></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class="ab-submenu">
+		<li id="wp-admin-bar-user-info"><a class="ab-item" tabindex="-1" href="http://localhost:8888/wp/wp-admin/profile.php"><img alt="" src="./Internalsite_files/8be6359513b9214c785a3ce1987c488d(1).png" srcset="http://2.gravatar.com/avatar/8be6359513b9214c785a3ce1987c488d?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64"><span class="display-name">admin</span></a>		</li>
+		<li id="wp-admin-bar-edit-profile"><a class="ab-item" href="http://localhost:8888/wp/wp-admin/profile.php">Edit My Profile</a>		</li>
+		<li id="wp-admin-bar-logout"><a class="ab-item" href="http://localhost:8888/wp/wp-login.php?action=logout&amp;_wpnonce=e16f983262">Log Out</a>		</li></ul></div>		</li></ul>			</div>
+						<a class="screen-reader-shortcut" href="http://localhost:8888/wp/wp-login.php?action=logout&amp;_wpnonce=e16f983262">Log Out</a>
+					</div>
+
+		    </div>
+  </footer>
+
+  
+</body></html>
