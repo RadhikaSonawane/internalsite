@@ -14,7 +14,7 @@
             <?php 
             $product = wc_get_product( get_the_ID() );
             ?>
-            <div class="col-sm-4 card text-center">
+            <div class="col-sm-4 card text-center internal">
                 <?php 
                 the_post_thumbnail();
                 ?>

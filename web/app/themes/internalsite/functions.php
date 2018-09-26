@@ -6,12 +6,22 @@ function mbt_register_menus() {
 		'primary_menu' => 'Huvudmeny',
 	]);
 }
+
+//** Menubar 3 */
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'header-menu' => __( 'Huvudmeny' ),
+      'extra-menu' => __( 'menu3' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
 add_action('init', 'mbt_register_menus');
 function mbt_styles() {
 	wp_enqueue_style('bootstrap4-styles', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
 	wp_enqueue_style('mbt-styles', get_stylesheet_directory_uri() . '/style.css');
 	wp_deregister_script('jquery');
-	wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.2.1.slim.min.js', [], '3.2.1', true);
 	wp_enqueue_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', ['jquery'], '1.12.9', true);
 	wp_enqueue_script('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', ['jquery', 'popper'], '4.0.0', true);
 	wp_enqueue_script('mbt-script', get_stylesheet_directory_uri() . '/scripts/script.js', ['jquery', 'bootstrap'], false, true);

@@ -29,7 +29,7 @@
                             <?php while ($inspiration->have_posts()) : ?>
                                     <?php $inspiration->the_post(); ?>
 
-                    <div class="col-sm-4 card text-center">
+                    <div class="col-sm-4 card text-center popup">
 
                             <?php the_post_thumbnail('inpiration-image');?>
                         <div class="card in">

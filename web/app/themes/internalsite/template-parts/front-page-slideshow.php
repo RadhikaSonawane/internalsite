@@ -1,3 +1,7 @@
+<?php if (is_home()) { ?>
+        
+
+
 <section class='slideshow' id='slideshow'>
     <header>
 
@@ -14,3 +18,4 @@
     </header>
 
 </section>
+<?php }; ?>

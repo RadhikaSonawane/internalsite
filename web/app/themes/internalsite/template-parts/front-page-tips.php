@@ -30,7 +30,7 @@
                                 <?php $tips->the_post(); ?>
 
                                 
-                                <div class="col-sm-4 card text-center">
+                                <div class="col-sm-4 card text-center popups">
 
                                         <?php the_post_thumbnail('tips-image');?>
                                     <div class="ti">

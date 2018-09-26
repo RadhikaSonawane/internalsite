@@ -1,7 +1,7 @@
 .product{
     margin-top: 15px;  
     .button{
-        background-color: red; /* Green */
+        background-color: red; /* Red */
         border: none;
         color: white;
         padding: 10px;
@@ -20,6 +20,18 @@
         }
 .internal a { 
         color:white; 
+        } 
+    a:hover {
+            color: black;
+        } 
+       a h2:hover {
+            color: black;
+        }
+     .price:hover {
+            color: black;
+        }
+    .star-rating:hover {
+            color: black;
         } 
 
 .internal {
@@ -75,9 +87,10 @@ color:black;
 
 .orderby{
     background-color: red;
-    font-size: 2em;
+    font-size: 1.5em;
     color:white;
     text-align: center;
+    margin-left: 50%;
 }
 .woocommerce-breadcrumb{
     position: relative;
@@ -86,4 +99,72 @@ color:black;
     a{
         color:white;
     }
+}
+
+.internal:hover
+{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}
+
+.head-decor {
+        background-color: rgb(92, 84, 85); 
+        padding: 40px;
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+}
+
+.menu-menu3-container{
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+        background-color:rgba(213, 204, 204, 0.68); 
+    }
+    
+    li {
+        float: left;
+        border-right:1px solid #bbb;
+    }
+    
+    
+    
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        text-align: center;
+    }
+    
+    li a:hover {
+        background-color: rgb(92, 84, 85);
+    }
+    
+    .a {
+        background-color: #4CAF50;
+    }
+}
+
+.main-contain{
+    margin-bottom: 20px;;
+}
+
+.pagnitaion{
+    margin-bottom: 15em;
+    margin-left: 50%;
 }

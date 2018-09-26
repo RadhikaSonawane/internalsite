@@ -21,7 +21,7 @@ get_header(); // header.php
                         </div>
                     <?php endif; ?>
             </div><br/>
-            <?php get_template_part('flexible-content', 'flexible-content');?>
+           
   
 			<?php the_content(); ?>
 		<?php } ?>
